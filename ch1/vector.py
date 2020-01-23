@@ -16,7 +16,7 @@ class Vector:
         return hypot(self.x, self.y)
 
     def __bool__(self):
-        return bool(abs(self))
+        return bool(self.x or self.y)
 
     def __add__(self, other):
         x = self.x + other.x
